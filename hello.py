@@ -15,7 +15,7 @@ try:
     conn = psycopg2.connect(conn_string)
     print("Connection established")
     cursor = conn.cursor()
-except ConnectionError as e:
+except TypeError as e:
     print(f"An error occurred: {e}")
     
     
