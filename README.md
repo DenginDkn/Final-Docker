@@ -13,6 +13,7 @@ Make sure you have the following software installed on your system:
 - [Docker](https://www.docker.com/products/docker-desktop)
 - [Python 3.10](https://www.python.org/downloads/release/python-3100/)
 - [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+- [GitActions](https://docs.github.com/en/actions)
 
 ### Installation
 
