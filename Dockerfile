@@ -1,5 +1,6 @@
 FROM python:3.10-alpine3.15
 WORKDIR /app
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 COPY . .
 COPY sshd_config /etc/ssh/
