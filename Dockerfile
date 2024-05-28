@@ -7,7 +7,6 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 COPY . .
-
 COPY sshd_config /etc/ssh/sshd_config
 
 COPY entrypoint.sh ./
@@ -17,6 +16,6 @@ RUN apk add openssh \
     && echo "root:Docker!" | chpasswd \
     && ssh-keygen -A
 
-EXPOSE 8000 2222
+EXPOSE 2222 8000 
 
-ENTRYPOINT [ "./entrypoint.sh" ]
+CMD service ssh start && python3 hello.py
